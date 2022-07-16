@@ -1,0 +1,53 @@
+body.showModal .modal{
+    display: flex;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent {
+    background-color: #ffffff;
+    position: relative;
+    z-index: 2;
+    max-width: 90%;
+    display: inline-flex;
+}
+
+.modalContent__photo{
+    width: 400px;
+    height: 450px;
+}
+
+.modalContent__closeButton{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+}
+
+.closeBut{
+    width: 10px;
+    height: 10px;
+}
+
+.modalBackground {
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+    z-index: 1;
+}
